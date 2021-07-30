@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.cbr-btn {
+  background-color: #e76f51;
+  color: #fff;
+}
+
+.header-bg {
+  background-color: #264653;
+}
+
+.featured-bikes {
+  position: relative;
+}
+.featured-bikes h5::after {
+  position: absolute;
+  content: "";
+  width: 5.5rem;
+  height: 0.1rem;
+  top: 5rem;
+  left: 38.5rem;
+  background-color: rgba(255, 0, 0, 0.918);
+}
+
+#feature-1,
+#feature-2 {
+  filter: grayscale(1);
+}
+.btn-outline-secondary {
+  transition: all linear 0.3s;
+}
+.btn-outline-secondary:hover {
+  background-color: #e76f51;
+  color: #fff;
+}
+
+.clients span,
+.faqs span,
+.gallery span,
+.contact span,
+.honda-overview .bikes-heading {
+  color: #e76f51;
+}
+.clients .card p {
+  color: gray;
+}
+.clients .card-body i {
+  color: #e76f51;
+}
+.clients .card-body .reviwer-info h5 {
+  color: #23a6f0;
+}
+.clients .card .client-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.faq-border {
+  border-color: #d5e5fb;
+}
+.gallery img {
+  border: 1rem solid rgba(153, 143, 51, 0.137);
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.03);
+}
+.footer-bg {
+  background-color: #0b0d17;
+}
+footer div li,
+footer div li a {
+  color: #fff;
+}
+
+/* custom responsiveness */
+
+@media only screen and (min-width: 280px) and (max-width: 480px) {
+  .header__content-left h1 {
+    font-size: 1rem;
+  }
+  .header__content-left p {
+    font-size: 0.8rem;
+  }
+  .header__content-right {
+    width: 90%;
+    margin-top: 1.8rem;
+  }
+  .honda-overview .bike-info p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+  .header__content-right {
+    width: 75%;
+    margin-top: 2.4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  header {
+    max-height: 45vh;
+  }
+}
+/* End of responsive */

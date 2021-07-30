@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favIcon.png" type="image/x-icon" />
+    <title>Honda-CBR</title>
+
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header-bg vh-100">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link me-2 active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2 active text-white" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2 active text-white" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2 active text-white" href="#">Contact</a>
+              </li>
+            </ul>
+            <a href="#"
+              ><button class="btn cbr-btn ms-0 ms-md-4 py-2 px-4">
+                Login
+              </button></a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-contents container">
+        <div class="row d-flex align-items-center mt-5">
+          <div class="col-md-7">
+            <div class="header__content-left">
+              <p class="text-white-50">
+                Computer-controlled digital transistorized with electronic
+                advance
+              </p>
+              <h1 class="text-white">Honda CBR 300R</h1>
+              <p class="text-white-50">
+                The longer-stroke CBR300R was announced at the China
+                International Motorcycle Trade Exhibition in Chongqing, with
+                engine displacement increased from 249.6 to 286 cc.
+              </p>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn cbr-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Purchase
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Hello Sir,
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      This is our new latest Honda CBR300R.It has that much
+                      speed which can compete with sporting cars. Would u like
+                      to buy now?
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn cbr-btn"
+                        data-bs-dismiss="modal"
+                      >
+                        Yes
+                      </button>
+                      <button type="button" class="btn btn-danger">No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="header__content-right">
+              <img src="./images/header-bike.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- featured-bikes -->
+
+      <section class="featured-bikes container my-5">
+        <h2 class="text-center fw-bold">Featured Bikes 2021</h2>
+        <h5 class="text-center text-danger">Best Bike collection</h5>
+        <div class="row mt-5 ms-5 ms-sm-0">
+          <div class="col-md-4">
+            <div class="feature-bike w-75" id="feature-1">
+              <img src="./images/feature-bike.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-bike w-75">
+              <img src="./images/feature-bike.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-bike w-75" id="feature-2">
+              <img src="./images/feature-bike.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- latest-news -->
+
+      <section class="latest-news container my-5">
+        <h2 class="text-center fw-bold">Latest News</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
+          <div class="col">
+            <div class="card h-100 shadow border-0 rounded-3">
+              <img
+                src="./images/bike-1.png"
+                class="card-img-top p-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Ducati XDIAVEL S-73</h5>
+                <p class="card-text">
+                  The new XDiavel Black Star version embodies the sports side of
+                  the Ducati cruiser.
+                </p>
+              </div>
+              <div class="card-btn">
+                <button class="btn cbr-btn py-2 px-3 mb-4 ms-3">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow border-0 rounded-3">
+              <img
+                src="./images/bike-2.png"
+                class="card-img-top p-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Motorcycles & Scooters</h5>
+                <p class="card-text">
+                  This is one of the most powerful motorcycle u have ever seen.
+                  here are also some scooters too.
+                </p>
+              </div>
+              <div class="card-btn">
+                <button class="btn btn-outline-secondary py-2 px-3 mb-4 ms-3">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow border-0 rounded-3">
+              <img
+                src="./images/bike-3.png"
+                class="card-img-top p-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">2021 Honda CBR500R</h5>
+                <p class="card-text">
+                  Is it any wonder why the Honda CBR500R is one of our most
+                  popular sportbikes? It just gets so many things right.
+                </p>
+              </div>
+              <div class="card-btn">
+                <button class="btn btn-outline-secondary py-2 px-3 mb-4 ms-3">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- clients -->
+
+      <section class="clients container my-5">
+        <h2 class="text-center fw-bold">Happy <span>Clients Says</span></h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5 mt-5">
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow d-flex align-items-center pt-5"
+            >
+              <img
+                src="./images/user-1.png"
+                class="card-img-top w-25"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  I am very pleased to let you know that their honda collection
+                  is just amazion, U should visit at least once in your life.
+                </p>
+                <div class="ratings text-center mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="reviwer-info text-center">
+                  <h5>Regina Miles</h5>
+                  <h6 class="fw-bold">Banker</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow d-flex align-items-center pt-5"
+            >
+              <img
+                src="./images/user-2.png"
+                class="card-img-top w-25"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  Few days ago, I heard about their shop, I bought an amazing
+                  sporting bike from them, My son is quite happy to use their
+                  bike.
+                </p>
+                <div class="ratings text-center mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="reviwer-info text-center">
+                  <h5>Elle smith</h5>
+                  <h6 class="fw-bold">Doctor</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card h-100 border-0 shadow d-flex align-items-center pt-5"
+            >
+              <img
+                src="./images/user-3.jpg"
+                class="card-img-top client-pic"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="text-center">
+                  I was searching many shop for my own scooty, but couldn't find
+                  the appropriate one. But finally i got one from them. it's
+                  unimaginably good.
+                </p>
+                <div class="ratings text-center mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="reviwer-info text-center">
+                  <h5>Selena parker</h5>
+                  <h6 class="fw-bold">Engineer</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+
+      <section class="faqs container my-5">
+        <h2 class="text-center fw-bold">
+          Frequently Asked <span>Questions</span>
+        </h2>
+
+        <div class="row d-flex align-items-center mt-5">
+          <div class="col-md-6">
+            <div class="faq-img w-75 ms-5 mb-3 mb-sm-0 ms-sm-0">
+              <img src="./images/faq.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="faq-accordion">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item faq-border mb-3">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      What are the most important things I should know about
+                      riding a bike?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike. This will
+                      help you be a more focused and legally compliant bike
+                      rider.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item faq-border mb-3">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      How can I tell if my helmet is old and I need a new one?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item faq-border mb-3">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      My bike has been in storage is it safe to ride?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item faq-border mb-3">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      My bike has been in storage is it safe to ride?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item faq-border mb-3">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button
+                      class="accordion-button collapsed fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      My bike has been in storage is it safe to ride?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Safety First! Always obey the rules of the road. Obey all
+                      traffic signals, signs, and laws. Get in the mindset of
+                      “driving” your bike—not just “riding” your bike.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- honda overview -->
+
+      <section class="honda-overview container my-5">
+        <h2 class="text-center fw-bold">
+          Our fews <span class="bikes-heading">Bikes</span>
+        </h2>
+        <div class="row d-flex align-items-center gy-3">
+          <div class="col-md-6">
+            <div class="honda-img mb-4 ms-5 ms-md-0">
+              <img src="./images/bike-spec-1.jpg" class="w-75" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bike-info">
+              <h2>KTM RC 200</h2>
+              <p>
+                The KTM RC 200 is powered by 199.5cc BS6 engine which develops a
+                power of 25.4 bhp and a torque of 19.5 Nm. With both front and
+                rear disc brakes, KTM RC 200 comes up with anti-locking braking
+                system. This RC 200 bike weighs 160.6 kg and has a fuel tank
+                capacity of 9.5 liters.
+              </p>
+              <div>
+                <li>
+                  <i class="fas fa-long-arrow-alt-right fs-5"></i>
+                  <span class="ms-2">Engine-Capacity: 199 cc</span>
+                </li>
+
+                <li>
+                  <i class="fas fa-long-arrow-alt-right fs-5"></i>
+                  <span class="ms-2">Mileage: 28 Kmpl</span>
+                </li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="honda-img mb-4 ms-5 ms-md-0">
+              <img src="./images/bike-spec-2.jpg" class="w-75" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bike-info">
+              <h2 class="text-uppercase">Suzuki Gixxer SF 250</h2>
+              <p>
+                Suzuki Gixxer SF 250 is a sports bike available at a starting
+                price of Rs. 1,80,552 in India. It is available in 2 variants
+                and 2 colours with top variant price starting from Rs. 1,81,413.
+                The Suzuki Gixxer SF 250 is powered by 249cc BS6 engine which
+                develops a power of 26.13 bhp and a torque of 22.2 Nm.
+              </p>
+              <div>
+                <li>
+                  <i class="fas fa-long-arrow-alt-right fs-5"></i>
+                  <span class="ms-2">Engine-Capacity: 249 cc</span>
+                </li>
+
+                <li>
+                  <i class="fas fa-long-arrow-alt-right fs-5"></i>
+                  <span class="ms-2">Mileage: 35 Kmpl</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- gallery -->
+
+      <section class="gallery container my-5">
+        <h2 class="text-center fw-bold">Our <span>Gallery</span></h2>
+
+        <div class="row gy-5 mt-4 d-flex">
+          <div class="col-md-6">
+            <div class="gallery">
+              <img src="./images/gallery-1.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="gallery">
+              <img src="./images/gallery-2.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="gallery">
+              <img src="./images/gallery-3.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="gallery">
+              <img src="./images/gallery-4.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="gallery">
+              <img src="./images/gallery-5.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="gallery">
+              <img src="./images/gallery-6.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+
+      <section class="contact container d-flex justify-content-center my-5">
+        <form class="w-100">
+          <h2 class="text-center fw-bold">Send Us a <span>message</span></h2>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+          </div>
+
+          <textarea class="form-control mb-4" cols="79" rows="10"></textarea>
+
+          <button type="submit" class="btn cbr-btn px-5 py-3 rounded-pill">
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer footer-bg mt-5 p-5">
+      <div class="container">
+        <div class="row d-flex justify-content-evenly">
+          <div class="col-md-3">
+            <div class="links d-flex mb-3">
+              <li>Download Now</li>
+              <li class="ms-2">License</li>
+            </div>
+
+            <div class="links d-flex">
+              <li><a href="#">About</a></li>
+              <li class="ms-3"><a href="#">Features</a></li>
+              <li class="ms-3"><a href="#">Pricing</a></li>
+            </div>
+
+            <p class="text-white">&copy; 2021 bike. All rights reserved.</p>
+          </div>
+
+          <div class="col-md-6"></div>
+
+          <div class="col-md-3 ms-sm-0">
+            <h3 class="mb-3 text-white">Get the app</h3>
+            <div class="download">
+              <img
+                src="./images/download-app-android.png"
+                class="w-50 mb-2"
+                alt=""
+              />
+              <img src="./images/download-app.svg" class="w-50" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
